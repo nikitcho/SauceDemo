@@ -21,11 +21,11 @@ public class TestUtil {
     public int implicitWait;
 
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {driver.quit();
     }
 
-    @BeforeTest
+    @BeforeMethod
     public void setupDriverAndOpenTestSIte() {
         readConfig("src/test/resources/config.properties");
         setupWebDriver();

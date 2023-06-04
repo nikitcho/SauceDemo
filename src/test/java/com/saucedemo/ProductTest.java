@@ -31,17 +31,17 @@ public class ProductTest extends TestUtil {
         WebElement itemToBeAdded = driver.findElement(By.id(PRODUCT_ID + itemName));
         itemToBeAdded.click();
 
+
         WebElement shoppingCartBadge = driver.findElement(By.className("shopping_cart_badge"));
 
-        Assert.assertEquals (shoppingCartBadge.getText(), "1");
+        Assert.assertEquals(shoppingCartBadge.getText(), "1");
 
     }
 
     @DataProvider (name = "item list")
     public Object [][] getItems() {
         return new Object[][]{
-                {"bolt-t-shirt"},
-                    {"bike-light"}
+                {"bolt-t-shirt"}, {"bike-light"}
         };
     }
 
