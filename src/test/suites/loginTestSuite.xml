@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="SauceDemo"
+       annotations="JDK" parallel="tests">
+
+
+    <test name="LoginSuite">
+        <classes>
+            <class name="com.saucedemo.SuccessfulLogin"/>
+        </classes>
+    </test>
+    <test name="ProductSuite">
+        <classes>
+            <class name="com.saucedemo.ProductTest"/>
+        </classes>
+    </test>
+    <test name="Product Suite POM">
+        <classes>
+            <class name="testPOM.ProductTest"/>
+        </classes>
+    </test>
+
+
+</suite>
